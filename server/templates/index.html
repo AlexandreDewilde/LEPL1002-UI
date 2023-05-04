@@ -8,27 +8,36 @@
 </head>
 <body>
 <nav>
-    <a>Wemeetall</a>
+    <a href="/">Wemeetall</a>
     <a>Home</a>
     <a>Contact</a>
-    <a>À propos</a>
+    <a href="/about">À propos</a>
 </nav>
 
 <section class="page-container">
     <section class="detection-container">
-        <span><b>Last Speed Detection</b></span>
+        <span><b>Last Speed Detections</b></span>
         <ul>
             <li class="good-speed">8km/h 10h00</li>
             <li class="bad-speed">69km/h 69h69</li>
-        </ul>
+            </ul>
     </section>
     <section class="income-container">
         <span><b>Fine Income</b></span>
         <span id="income-text">+50$</span>
-    </section>
-    <section class="hour">
+        </section>
+        <section class="hour">
         <span>10:00:00</span>
     </section>
+    <section class="speedometer-section">
+        <b>Last speed</b>
+        <span>69 km/h</span>
+    </section>
+</section>
+<section class="chart">
+    <canvas id="chart-speed"></canvas>
 </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="static/js/main.js"></script>
 </html>

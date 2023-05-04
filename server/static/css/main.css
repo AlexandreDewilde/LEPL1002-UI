@@ -47,11 +47,13 @@ ul {
     margin: 20px;
     padding: 20px;
     gap: 40px;
+    height: 20%;
 }
 
 .detection-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 1px solid gray;
     border-radius: 10px;
     margin: 5px;
@@ -79,6 +81,8 @@ ul {
 .income-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid gray;
     border-radius: 10px;
     margin: 5px;
@@ -109,4 +113,28 @@ ul {
 
 .hour span {
     font-size: 4em;
+}
+
+.speedometer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    width: 20%;
+}
+
+.speedometer-section span {
+    font-size: 3.5em;
+}
+
+.chart {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
+    height: 65%;
 }
