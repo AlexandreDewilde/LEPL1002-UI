@@ -11,7 +11,7 @@ while True:
 		current = time.time()
 		if last != None and 0.1 < (current-last) < 4: 
 			print("Delta : {}".format((current-last)))
-			requests.post("https://moussimousse.louvainlinux.org/add_record", json={"time": int(datetime.datetime.now().timestamp()), "speed": 1 / (current - last)})
+			requests.post("https://moussimousse.louvainlinux.org/add_record", json={"time": round(datetime.datetime.now().timestamp()), "speed": 1 / (current - last)})
 			last = None
 		else:                      
 			last = current
