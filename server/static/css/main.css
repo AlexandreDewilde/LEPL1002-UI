@@ -47,7 +47,47 @@ ul {
     margin: 20px;
     padding: 20px;
     gap: 40px;
-    height: 20%;
+    
+}
+
+@media only screen and (max-width : 600px) {
+    .page-container {
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+        padding: 10px;
+    }
+    .detection-container {
+        width: 90%;
+    }
+    .income-container {
+        width: 90%;
+        height: auto;
+    }
+    .hour {
+        width: 90%;
+    }
+    .width {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width : 600px) {
+    .page-container {
+        height: 20%;
+    }
+    .detection-container {
+        width: 30%;
+    }
+    .income-container {
+        width: 10%;
+    }
+    .hour {
+        width: 20%;
+    }
+    .speedometer-section {
+        width: 20%;
+    }
 }
 
 .detection-container {
@@ -58,7 +98,7 @@ ul {
     border-radius: 10px;
     margin: 5px;
     padding: 15px;
-    width: 30%;
+    overflow: auto;
 }
 
 .detection-container span b {
@@ -87,8 +127,7 @@ ul {
     border-radius: 10px;
     margin: 5px;
     padding: 15px;
-    width: 10%;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 
@@ -108,7 +147,6 @@ ul {
     border-radius: 10px;
     margin: 5px;
     padding: 15px;
-    width: 20%;
 }
 
 .hour span {
@@ -124,7 +162,6 @@ ul {
     border-radius: 10px;
     margin: 5px;
     padding: 15px;
-    width: 20%;
 }
 
 .speedometer-section span {

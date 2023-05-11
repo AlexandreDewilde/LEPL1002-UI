@@ -63,7 +63,7 @@ new Chart(ctx, {
     data: {
         labels: labels,
         datasets: [{
-            label: '# of Votes',
+            label: '# of records with this speed',
             data: data,
             borderWidth: 1,
             backgroundColor: 'white',
