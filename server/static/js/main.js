@@ -17,7 +17,7 @@ const updateRecords = () => {
         const li = document.createElement("li");
         const date = new Date(records[i][0]);
         const display_date = `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}, ${date.getDay().toString().padStart(2, '0')}/${date.getMonth().toString().padStart(2, '0')}/${date.getFullYear()}`;
-        li.appendChild(document.createTextNode(`${records[i][1]} km/h ${display_date}`));
+        li.appendChild(document.createTextNode(`${records[i][1].toFixed(2)} km/h ${display_date}`));
         ul_last_speed.appendChild(li);
         
         addToChart(records[i]);
@@ -25,7 +25,7 @@ const updateRecords = () => {
         if (records[i][1] > 15)
             fine += 10;
     }
-    last_speed_span.innerText = records[0][1] + "km/h";
+    last_speed_span.innerText = records[0][1].toFixed(2) + "km/h";
     fine_span.innerText = "+" + fine + "$";
 }
 
