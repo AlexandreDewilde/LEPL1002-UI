@@ -16,7 +16,7 @@ const updateRecords = () => {
     for (let i = 0; i < records.length; i++) {
         const li = document.createElement("li");
         const date = new Date(records[i][0]);
-        const display_date = `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}, ${date.getDay().toString().padStart(2, '0')}/${date.getMonth().toString().padStart(2, '0')}/${date.getFullYear()}`;
+        const display_date = `${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}, ${date.getDay().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
         li.appendChild(document.createTextNode(`${records[i][1].toFixed(2)} km/h ${display_date}`));
         ul_last_speed.appendChild(li);
         
